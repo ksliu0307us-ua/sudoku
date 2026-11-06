@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sudoku-cli"
+version = "0.1.0"
+description = "Generate, solve, rate and play sudoku in the terminal"
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+authors = [{name = "Kevin Liu"}]
+
+[project.scripts]
+sudoku = "sudoku.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["sudoku*"]
